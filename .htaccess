@@ -1,0 +1,9 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /er_instalaciones/
+RewriteRule ^$ public/ [R=302,L]
+
+<FilesMatch "^(composer\.(json|lock)|README\.md)$">
+    Require all denied
+</FilesMatch>
